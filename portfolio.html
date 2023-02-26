@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio proyecto final</title>
+    <link rel="stylesheet" type="text/css" href="./portfolio.css">
+    <script src="portfolio.js"></script>
+    <script src="https://kit.fontawesome.com/6a31052744.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button type="button" onclick="fondo()" id="mod-Noc">Noche</button>
+    <header>
+        <div>
+            <h1 class="JM">J<span>M</span></h1>
+        </div>
+        
+        <nav>
+            <a href="#Sobre mí" class="nav-link">Sobre mí</a>
+            <a href="#Contacto" class="nav-link">Contacto</a>
+            <a href="#Redes" class="nav-link">Redes</a>
+        </nav> 
+    </header>
+    <section> 
+        <div class="info">
+            <h1>Información Personal</h1>
+            <ul><li>Moyano, Jonathan.</li>
+                <li>Edad: 26 años.</li>  <span id="dots">...</span><span id="more">         
+                <li>Disponibilidad horaria: full time.</li>
+                <li>Secundario: Completo- 2016.</li> 
+                <li>Escuela: Cens 3-418 S/N.</li>
+                <li>Título obtenido: Producción de bienes y servicios
+                con orientación a seguridad e higiene laboral.
+                <li>Cursos: fundamentos básicos de programación, atención al cliente, ,marketing comercial.</li></span>
+            </ul>  
+            <button onclick="leerMas()" id="leer-mas">Leer Más</button>
+            <img id="rotar-img" src="foto perfil.png" alt=""> 
+            <input type="checkbox" id="rotar" onclick="rotar(this)" checked >        
+        </div>    
+    </section>
+
+    <section class="sobre-mi" id="Sobre mí">
+        <video id="myVideo" controls autoplay playisnline muted>
+            <source src="Engranajes - 5378.mp4" type="video/mp4">
+            Tu navegador no es compatible con videos.
+        </video>
+        <h2>Sobre mí</h2>
+        <p>Trabajo en servicios públicos como peon/obrero.<span id="mas">...</span><span id="menos">
+           ealice cursos como atención al cliente, marketing 
+           comercial y microcontroladores básicos. 
+           Estudie turismo y hoteleria, aunque no 
+           la concluí la tecnicatura y actuamente realizo el 
+           curso de Front-end "HTML, Css y Js" de la mano de Ticmas.
+           Me gusta trabajar en equipo, soy detallista, 
+           creativo, responsable, 
+           me destaco por resolver problemas.
+        </span> 
+        </p> 
+        <button onclick="masInfo()" id="mas-Info">Más info</button>      
+         <a href="CV.pdf"><buttom id="CV">Descargar CV</buttom></a>
+    </section>
+    <div class="contacto" id="Contacto">
+        <form id="myForm" action="/action_page.php" onsubmit="myFunction()" method="get">
+            <h2>Para contactarnos</h2>
+            <input id="Nombre" name="Nombre" type="text" placeholder="Nombre" required> <br> <br>
+            <input id="Email" name="Email" type="email" placeholder="Email" required><br> <br>
+            <input id="Celular" name="Celular" type="number" placeholder="Celular" required> <br> <br>
+            <textarea id="Mensaje" name="Mensaje" placeholder="Por favor, deposite su mensaje..."></textarea><br> <br>
+            <input type="submit"  class="Enviar" id="Enviar"></input>
+        </form>
+    </div>
+    <footer id="Redes">
+        <h1>Redes Sociales</h1>
+        <h2>Front-end</h2> 
+        <div class="iconos">
+                <a id="insta" href="https://www.instagram.com/jonhimoyano/?next=%2F">
+                    <i class="fa-brands fa-instagram-square"></i>
+                </a>
+                <a id="face" href="https://www.facebook.com/jonathan.moyano.92372">
+                    <i class="fa-brands fa-facebook-square"></i> 
+                </a>
+                <a id="github" href="https://github.com/Jonhiemi">
+                    <i class="fa-brands fa-github-alt"></i>        
+                </a>
+                <a id="wp" href="https://wa.me/qr/KPP4GF2AMRZCN1">
+                    <i class="fa-brands fa-whatsapp-square"></i>          
+                </a>
+                <a id="linkedin" href="https://www.linkedin.com/in/jonathan-moyano-3067a7231">
+                    <i class="fa-brands fa-linkedin"></i>          
+                </a>
+        </div>
+    </footer>
+</body>
+</html>
